@@ -1,14 +1,12 @@
 body {
     color: #FFFDEC;
     margin: 0;
-    text-align: center;
     font-family:'Quattrocento Sans', Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     color: #335A6B;
     font-family: 'Quattrocentro', 'Georgia', 'Times New Roman', Times, serif;
-    text-align: center;
 }
 
 h2 {
@@ -18,7 +16,7 @@ h2 {
 p {
     color: #0B2232;
     line-height: 1.7rem;
-    text-align: center;
+    font-size: large;
 }
 
 .top-container {
@@ -39,7 +37,8 @@ p {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 55%;
+    text-align: center;
 }
 
 .middle-container {
@@ -49,19 +48,20 @@ p {
 
 .introduction {
     text-align: center;
-    width: 40%;
+    width: 75%;
     margin: auto;
 }
 
 .skills {
     margin-top: 80px;
+    text-align: center;
 }
 
 .parent {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.25fr 1fr;
     grid-template-rows: repeat(1, 1fr);
-    width: 40%;
+    width: 70%;
     margin:  auto;
     text-align: left;
     row-gap: 2rem;
@@ -72,6 +72,7 @@ p {
     display:block;
     margin: auto;
     padding-right: 30px;
+    text-align: left;
 }
 
 .explore {
@@ -83,12 +84,13 @@ p {
 .Portfolio {
     margin-top: 80px;
     margin-bottom: 50px;
+    text-align: center;
 }
 .websites {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.25fr 1fr;
     grid-template-rows: repeat(1, 1fr);
-    width: 40%;
+    width: 70%;
     padding-top: 10px;
     margin: auto;
     text-align: left;
@@ -124,6 +126,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;
+    text-align: center;
 }
 
 .bottom-container {
