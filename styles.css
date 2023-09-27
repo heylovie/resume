@@ -58,27 +58,30 @@ p {
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: 0.25fr 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    width: 70%;
-    margin:  auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: left;
     row-gap: 2rem;
   }
 
+.parent > * {
+    flex: 1;
+    max-width: 300px;
+    min-width: 250;
+    padding: 10px;
+}
 
 .ideas {
-    display:block;
     margin: auto;
     padding-right: 30px;
     text-align: left;
 }
 
 .explore {
-    display:block;
     margin: auto;
     padding-right: 30px;
+    
 }
 
 .Portfolio {
@@ -86,28 +89,52 @@ p {
     margin-bottom: 50px;
     text-align: center;
 }
+
 .websites {
-    display: grid;
-    grid-template-columns: 0.25fr 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    width: 70%;
-    padding-top: 10px;
-    margin: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: left;
     row-gap: 2rem;
 }
 
+.websites > * {
+    flex: 1;
+    max-width: 300px;
+    min-width: 250;
+    padding: 30px;
+}
+
 .cover-photo-1 {
-    display:block;
     margin: auto;
     padding-right: 30px;
 }
 
 .cover-photo-2 {
-    display:block;
     margin: auto;
     padding-right: 30px;
 }
+
+@media (max-width: 1250px) {
+    .parent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parent > * {
+        max-width: 500px;
+    }
+
+    .websites {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .websites > * {
+        max-width: 500px;
+    }
+}
+
 
 .contact-me {
     background-image: url(./images/mountains-footer.jpg);
