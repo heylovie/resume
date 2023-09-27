@@ -157,7 +157,8 @@ p {
 
 .bottom-container {
     background-color: #001017;
-    padding: 20px
+    padding: 20px;
+    text-align: center;
 }
 
 .copyright {
