@@ -69,7 +69,7 @@ p {
     flex: 1;
     max-width: 300px;
     min-width: 250;
-    padding: 10px;
+    padding: 0px 20px 0px 20px;
 }
 
 .ideas {
@@ -102,7 +102,7 @@ p {
     flex: 1;
     max-width: 300px;
     min-width: 250;
-    padding: 30px;
+    padding: 0px 20px 0px 20px;
 }
 
 .cover-photo-1 {
@@ -167,11 +167,11 @@ p {
 }
 
 a {
-    color: #5A2B20;
+    color:#C26E40;
 }
 
 a:hover {
-    color:#C26E40;
+    color: #5A2B20;
 }
 
 .btn {
